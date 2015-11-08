@@ -27,11 +27,17 @@ public class Destroy : MonoBehaviour
             beam.enabled = true;
             
         }
+        else if (Input.GetMouseButton(0))
+        {
+            beam.enabled = false;
+            mPressed = false;
+            StartCoroutine(FadeTo(0.0f, .3f));
+        }
         else if (Input.GetMouseButtonUp(0))
         {
             beam.enabled = false;
             mPressed = false;
-            StartCoroutine(FadeTo(0.0f, .1f));
+            StartCoroutine(FadeTo(0.0f, .3f));
         }
 
     }
