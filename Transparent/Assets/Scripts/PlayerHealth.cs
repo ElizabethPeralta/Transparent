@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour {
     public int currentHealth;
     public Slider healthSlider;
 
-    public bool isDead;
+    public bool isDead = false;
     public bool damaged;
 
 
@@ -56,6 +56,9 @@ public class PlayerHealth : MonoBehaviour {
         // Set the death flag so this function won't be called again.
         isDead = true;
 
-        Application.LoadLevel("gameOverScreen");
+        if (isDead)
+        {
+            Application.LoadLevel("gameOverScreen");
+        }
     }
 }
