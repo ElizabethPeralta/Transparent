@@ -53,6 +53,10 @@
      <Compile Include="Assets\Scripts\GlassDestroy.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\ShadowFax.cs" />
+     <Compile Include="Assets\Scripts\Win Conditions 2.cs" />
+     <Compile Include="Assets\Scripts\Win Conditions 3.cs" />
+     <Compile Include="Assets\Scripts\Win Conditions.cs" />
+     <Compile Include="Assets\Scripts\WinningCondition.cs" />
      <None Include="Assets\2DLightAssets\Shaders\Gradient-NoTexture-Radial-SingleColor-ToTransparent-RegularUV-AlphaBlend.shader" />
      <None Include="Assets\2DLightAssets\Shaders\NoTexture.shader" />
      <None Include="Assets\Toon Zombie S\TSF\Shaders\TSFOutline.shader" />
@@ -66,7 +70,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="pseudoSinCos">
- <HintPath>C:/Users/zeror/Documents/CORE Systems/Game Jam 11-7-2015/Transparent/Assets/2DLightAssets/Scripts/Helpers/pseudoSinCos.dll</HintPath>
+ <HintPath>C:/Users/zeror/Documents/Transparent/Transparent/Assets/2DLightAssets/Scripts/Helpers/pseudoSinCos.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

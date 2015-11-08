@@ -3,7 +3,7 @@ using System.Collections;
 
 public class WinConditions3 : MonoBehaviour {
 	
-	 void OnTriggerEnter (Collider other)
+//	void OnTriggerEnter (Collider other);
 
 	// Use this for initialization
 	void Start () {
@@ -18,8 +18,8 @@ public class WinConditions3 : MonoBehaviour {
  //public class Restarter : MonoBehaviour {
  
      //void OnTriggerEnter2D (Collider2D other)
-     {
-         if(other.tag == "Player")
-             Application.LoadLevel(Application.loadedLevelName);
-     }
- }
+//     {
+//         if(other.tag == "Player")
+//             Application.LoadLevel(Application.loadedLevelName);
+//     }
+// }

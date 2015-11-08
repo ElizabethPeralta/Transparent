@@ -10,13 +10,14 @@ public class WinConditions : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	//currentLevel = LichHunt;
-
-		if (LichHunt == 4) {
-			if (count <= 0) {
-				Application.LoadLevel("LichHunt proto1");
-				count = 0;
-	
+//	
+//		currentLevel = LichHunt;
+//
+//		if (LichHunt == 4) {
+//			if (count <= 0) {
+//				Application.LoadLevel ("LichHunt proto1");
+//				count = 0;
+//			}
+//		}
 	}
 }
