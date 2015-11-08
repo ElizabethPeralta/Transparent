@@ -17,18 +17,18 @@ public class WinningCondition : MonoBehaviour {
     {
         if (other.CompareTag("Player1"))
         {
-            Application.LoadLevel("Player1Win");
+            Application.LoadLevel("Player1Wins");
 
         }
 
         if (other.CompareTag("Player2"))
         {
-            Application.LoadLevel("Player2Win");
+            Application.LoadLevel("Player2Wins");
 
         }
         if (other.CompareTag("Player3"))
         {
-            Application.LoadLevel("Player3Win");
+            Application.LoadLevel("Player3Wins");
 
         }
     
