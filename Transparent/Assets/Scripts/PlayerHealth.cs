@@ -1,27 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour {
 	
 	
-	public int health = 100;
-    public int currentHealth;
-    public Slider healthSlider;
-
-    public bool isDead = false;
-    public bool damaged;
-
-
-	 void Awake()
-    {
-        
-        currentHealth = health;
-    }
+	public float health;
+	
 	
 	void Start () {
 		
-	
+		health = 20f;
+		
 	
 	}
 	
@@ -31,34 +20,11 @@ public class PlayerHealth : MonoBehaviour {
 	}
 	
 	
-	//void OnTriggerEnter(Collider other){
-	//	if (other.CompareTag("Glass"))
-	//	{
-	//		health -= 1;
+	void OnTriggerEnter(Collider other){
+		if (other.CompareTag("Glass"))
+		{
+			health -= 1f;
 			
-	//	}
-	//}
-
-    public void TakeDamage(int ammount)
-    {
-        damaged = true;
-        currentHealth -= ammount;
-        healthSlider.value = currentHealth;
-
-        if(currentHealth <= 0 && isDead)
-        {
-            Death();
-        }
-    }
-
-    void Death()
-    {
-        // Set the death flag so this function won't be called again.
-        isDead = true;
-
-        if (isDead)
-        {
-            Application.LoadLevel("gameOverScreen");
-        }
-    }
+		}
+	}
 }
