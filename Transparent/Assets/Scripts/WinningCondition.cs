@@ -13,24 +13,15 @@ public class WinningCondition : MonoBehaviour {
 	
 	}
 
-    void OnTrigggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player1"))
+        if (other.GetComponent<Collider>().CompareTag("Player"))
         {
-            Application.LoadLevel("Player1Wins");
+            Application.LoadLevel("HumansWin");
 
         }
 
-        if (other.CompareTag("Player2"))
-        {
-            Application.LoadLevel("Player2Wins");
-
-        }
-        if (other.CompareTag("Player3"))
-        {
-            Application.LoadLevel("Player3Wins");
-
-        }
+       
     
     }
 }
